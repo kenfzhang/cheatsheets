@@ -1,0 +1,10 @@
+Create project
+$ mkdir <name of project>
+$ cd <name of project>
+$ bundle init
+Add the "jekyll" gem to Gemfile
+$ bundle
+
+Run and serve
+$ jekyll build
+$ jekyll serve

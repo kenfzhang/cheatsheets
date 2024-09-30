@@ -1,0 +1,8 @@
+View active version
+$ nvm current
+
+Change nvm version
+$ nvm use <version>
+
+View available versions
+$ nvm list

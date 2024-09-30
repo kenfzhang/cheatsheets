@@ -1,0 +1,11 @@
+Create a container from image
+$ docker run -it <image> <startup app>
+
+Connect to existing container as root
+$ docker exec -it <Container ID> bash
+
+Connect to existing container as user
+$ docker exec -it -u <user> <Container ID> <shell>
+
+List running containers (add -a to view inactive containers)
+$ docker ps

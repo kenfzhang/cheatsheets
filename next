@@ -1,0 +1,11 @@
+Create starter project
+$ npx create-next-app@latest nextjs-blog --use-npm --example "https://github.com/vercel/next-learn/tree/master/basics/learn-starter"
+
+Alternatively, in an empty directory, run:
+$ npm install react react-dom next
+
+Create general project
+$ npx create-next-app@latest
+
+Run project dev
+$ npm run dev

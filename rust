@@ -1,0 +1,6 @@
+New project with Cargo
+$ cargo new <project name>
+
+Build and run
+$ cargo run
+

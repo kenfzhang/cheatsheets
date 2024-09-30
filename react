@@ -1,0 +1,12 @@
+Create project
+$ npx create-react-app <name of project>
+$ bun create react-app <name of project>
+
+Create project with Redux template
+$ npx create-react-app my-app --template redux
+
+Add Redux to a project
+$ npm install react-redux
+
+Run and serve project (in project root)
+$ npm start
