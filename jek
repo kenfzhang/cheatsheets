@@ -8,3 +8,4 @@ $ bundle
 Run and serve
 $ jekyll build
 $ jekyll serve
+You may need to prefix the above statements with "bundle exec"
