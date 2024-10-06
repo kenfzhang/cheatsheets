@@ -7,3 +7,4 @@ Detach session:     <C-b>d
 Split horizontal:   <C-b>%
 Split vertical:     <C-b>"
 Move between panes: <C-b>[arrow key]
+tmux config file:   ~/.tmux.conf
