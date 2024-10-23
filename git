@@ -1,2 +1,5 @@
 Create a branch and immediately switch to it
 $ git switch -c <branch name>
+
+Compact view of git log
+$ git log --oneline
