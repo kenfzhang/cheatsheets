@@ -11,3 +11,6 @@ Install a dependency
 $ go get -u <dependency>
 Where <dependency> is something like github.com/go-chi/chi/v5
 The dependency should now be suggested by autocomplete
+
+Note: it is preferred to use 'go install' instead of 'go get':
+$ go install <dependency>
