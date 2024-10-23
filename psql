@@ -22,3 +22,8 @@ Set user password (in Linux)
 ALTER USER postgres PASSWORD <password>
 
 At this point, you can run SQL queries!
+
+Other psql commands
+\q  : quit psql
+\l  : list all databases
+\dt : list all tables in current database
