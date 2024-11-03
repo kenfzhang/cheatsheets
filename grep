@@ -1,0 +1,38 @@
+Grep is used as follows:
+$ grep <pattern> <filename>
+
+-r : Recursively search using grep (directories and subdirectories)
+$ grep -r <pattern> <path>
+
+-i : Ignore case
+$ grep -i <pattern> <filename>
+
+-v : Display non-matches instead of matches
+$ grep -v <pattern> <filename>
+
+-w : Find whole-word matches only
+$ grep -w <pattern> <filename>
+
+-E : Using multiple search terms
+$ grep -E "<query1>|<query2>|..." <filename>
+
+-H : With filename
+-n : With line number
+$ grep -Hn <pattern> <filename>
+
+-A : Show n lines after matches
+$ grep -A <n> <pattern> <filename>
+
+-B : Show n lines before matches
+$ grep -B <n> <pattern> <filename>
+
+Example: find lines with filename and line numbers in all files
+$ grep -Hnr <pattern> .
+
+Grep can be piped into!
+
+Find the string 'zip' in the given directories
+$ ls /bin /usr/bin | sort | uniq | grep zip
+
+Find <string> in the text of file.txt
+$ cat file.txt | grep <string>
