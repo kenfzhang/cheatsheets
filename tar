@@ -1,0 +1,17 @@
+Create tar archive
+$ tar cf <name of output> <file to create archive from>
+
+Example
+$ tar cf my_directory.tar my_directory
+
+Here, 'my_directory' is the input file, 'my_directory.tar' is the
+archive that is output by the operation.
+
+List contents of archive
+$ tar tf <name of tar archive>
+
+Extract archive
+$ tar xf <name of tar archive>
+The contents are copied to the current directory.
+Note: the extracted files take on the ownership of the user
+performing the restoration.
