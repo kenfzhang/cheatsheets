@@ -1,0 +1,7 @@
+String formatting with f-strings
+```
+location = "San Diego"
+temp = "72"
+print(f"It is currently {temp} degrees F in {location}.")
+# It is currently 72 degrees F in San Diego.
+```
