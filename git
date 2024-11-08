@@ -3,3 +3,9 @@ $ git switch -c <branch name>
 
 Compact view of git log
 $ git log --oneline
+
+Add local repository to GitHub
+$ git remote add origin <remote url>
+$ git remote -v
+$ git push origin main
+Where <remote url> is the URL of the new GitHub repo ending in '.git'
