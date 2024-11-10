@@ -1,0 +1,23 @@
+Setting up Python environments with venv and requirements.txt
+In requirements.txt, you can list packages you need:
+```
+pandas
+numpy
+matplotlib
+```
+
+For each entry, you can specify the specific version:
+```
+numpy==1.25.2
+```
+
+To create a virtual environment, go to the root of a project and run:
+$ python -m venv <name>
+Where <name> is the name of the directory to store your environment
+Usually, it's named something like "venv"
+
+Once the virtual env is created, you can activate it with:
+$ source venv/bin/activate
+
+To deactivate the environment:
+$ deactivate
