@@ -19,5 +19,8 @@ Usually, it's named something like "venv"
 Once the virtual env is created, you can activate it with:
 $ source venv/bin/activate
 
+While the env is activated, you can install requirements:
+$ pip install -r requirements.txt
+
 To deactivate the environment:
 $ deactivate
