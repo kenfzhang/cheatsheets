@@ -1,0 +1,44 @@
+To write tests in Go, use the `testing` package. 
+To run the tests, use the `go test` command.
+Tests are written in go files ending in "_test.go"
+If you have a .go file called "hello.go", you can write tests for it in
+a file named "hello_test.go".
+
+A basic unit test might look like the following:
+Suppose we want to test the following function in `main.go`:
+```
+package main
+
+func AddOne(n int) int {
+	return n + 1
+}
+```
+
+We can write tests for that function in `main_test.go` as follows:
+```
+package main
+
+import (
+	"testing"
+)
+
+func Test(t *testing.T) {
+	type testCase struct {
+		n int
+		expected int
+	}
+	tests := []testCase{
+		{1,2},
+		{4,5},
+		{8,9},
+	}
+	for _, test := range tests {
+		output := AddOne(test.n)
+		if output != test.expected {
+			// code that executes during failure
+		}
+	}
+}
+```
+
+Then, call `$ go test` to run the tests in `main_test.go`.

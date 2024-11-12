@@ -28,3 +28,12 @@ replace example.com/greetings => ../greetings
 ```
 The above line makes it so importing "example.com/greetings"
 looks in the directory "../greetings" relative to the current directory.
+
+Initialization statements in if statements allow you to declare and
+initialize a variable only within the scope of that if-block.
+Note: only one variable can be declared in the init statement.
+```
+if <inititializer>; <condition> {
+	// execute if condition is true
+}
+```
