@@ -4,6 +4,9 @@ $ git switch -c <branch name>
 Compact view of git log
 $ git log --oneline
 
+Use git log with options to limit output and disable pager
+$ git --no-pager log -n <number of commits to show>
+
 Add local repository to GitHub
 $ git remote add origin <remote url>
 $ git remote -v
