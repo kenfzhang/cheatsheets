@@ -7,17 +7,42 @@ $ git log --oneline
 Use git log with options to limit output and disable pager
 $ git --no-pager log -n <number of commits to show>
 
+See commits of a remote repo
+$ git log <remote name>/<name of branch on remote>
+
 Add local repository to GitHub
 $ git remote add origin <remote url>
 $ git remote -v
 $ git push origin main
 Where <remote url> is the URL of the new GitHub repo ending in '.git'
 
-Revert repo to last commit
+Note: "origin" is the conventional name for the repo considered the
+"source of truth". Remotes can be added more generally:
+$ git remote add <name> <uri>
+Where <uri> can be a URL or filepath
+
+Revert repo to last commit (be careful when using `reset --hard`)
 $ git reset --hard HEAD
+
+Revert repo to earlier commit, discarding changes
+$ git reset --hard <commit hash>
+
+Revert repo to earlier commit, keeping changes
+$ git reset --soft <commit hash>
 
 View ASCII graph representation of commit history
 $ git log --oneline --graph --all
 
 Create a branch and immediately switch to it
 $ git switch -c <branch name>
+
+Create a branch off a specific commit
+$ git switch -c <branch name> <commit hash>
+
+Delete a branch
+$ git branch -d <branch name>
+
+Rebase the current branch onto another branch
+Note: Don't rebase public branches such as `main`. Rebasing changes
+the history of the branch you are calling `rebase` from.
+$ git rebase <another branch>
