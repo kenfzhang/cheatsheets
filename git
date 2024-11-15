@@ -12,3 +12,6 @@ Where <remote url> is the URL of the new GitHub repo ending in '.git'
 
 Revert repo to last commit
 $ git reset --hard HEAD
+
+View ASCII graph representation of commit history
+$ git log --oneline --graph --all
