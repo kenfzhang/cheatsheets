@@ -1,2 +1,20 @@
 "Marshal"   : structs => JSON bytes
 "Unmarshal" : JSON bytes => structs
+
+JSON data in the body of an HTTP response is in a stream of bytes.
+You can use the `Decoder` from the `encoding/json` package to create
+structs from the JSOn data.
+```
+// User is a struct, res is a successful http.Response
+var users []User
+decoder := json.NewDecoder(res.Body)
+
+// Here, we call Decode with &users as the destination for the
+// decoded JSON data. Return if there is an error, which could be
+// caused by the data not matching the struct, or malformed JSON.
+if err := decoder.Decode(&users); err != nil {
+    fmt.Println("error decoding response body")
+    return
+}
+
+```
