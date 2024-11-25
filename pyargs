@@ -1,0 +1,8 @@
+Working with command line arguments in Python
+```
+import sys
+
+print(sys.argv[0])  # Index 0 contains the name of the file
+print(sys.argv[1])  # Index 1 and higher contains the arguments in the
+                    # order they were passed in
+```
